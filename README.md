@@ -1,14 +1,10 @@
-# smb3
-Disassembly of Super Mario Bros 3
+# Better Boom Booms
 
-Specifically for use with NESASM (https://github.com/camsaul/nesasm), this will reassemble into a byte-for-byte perfect clone of Super Mario Bros. 3 US (PRG1)
+Better Boom Booms
+---
 
-NOTE: Included are support files for my "NoDice" level editor (game.xml and "icons" subdirectory) and "MusConv" (musconv.xml) utilities. They are not part of the actual source code required to build the ROM, but are necessary if you intend to use these tools.
+This simple modification does the following:
+1) makes Boom Boom's crouched phase to take a random amount of time, as opposed to being fixed (and so, predictable). 
+This small change makes a Boom Boom battle much more difficult.
 
--------------
-
-To assemble, simply run:
-
-nesasm smb3.asm
-
-Intended for use for research into the inner workings of SMB3 and highly technical ROM hacks (such as Super Mario Bros. 3Mix)
+2) Makes Boom Boom invulnerable to projectiles (fireball / hammmer)
