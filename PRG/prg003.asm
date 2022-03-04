@@ -2845,9 +2845,15 @@ PRG003_AE50:
 	STA Objects_Var7,X
 	STA Objects_Var3,X
 
-	; Timer2 = $30 (ticks till he gets back up)
-	LDA #$30
-	STA Objects_Timer2,X
+	; NEW
+	; Timer2 = Random number betwen $25 and $70 (ticks till he gets up again)
+	; Bluefinch designed
+	; adds random "in shell" element here, capping it at $45
+	
+	LDA RandomN,X
+	AND #$45
+	ORA #$25
+	STA Objects_Timer2,X 
 
 	RTS		 ; Return
 
