@@ -1,6 +1,5 @@
 # Better Boom Booms
 
-Better Boom Booms
 ---
 
 This simple modification does the following:
